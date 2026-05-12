@@ -144,3 +144,14 @@
 [data-theme="retro"] .field-input:focus {
     box-shadow: 0 0 12px rgba(255, 42, 109, 0.4);
 }
+
+
+@media (max-width: 500px) {
+    .form-card {
+        padding: 24px 20px;
+    }
+
+    .form-title {
+        font-size: 20px;
+    }
+}

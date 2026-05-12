@@ -98,3 +98,31 @@
 [data-theme="retro"] .hero-title {
     text-shadow: 0 0 16px rgba(0, 255, 255, 0.5), 3px 3px 0 #ff2a6d;
 }
+
+
+@media (max-width: 700px) {
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .hero-actions .btn-primary,
+    .hero-actions .btn-secondary {
+        width: 100%;
+    }
+
+    .hero-visual {
+        height: 200px;
+    }
+}
