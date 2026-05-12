@@ -1,0 +1,114 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  border-bottom: var(--border);
+  background: var(--surface);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--text);
+  font-family: var(--font);
+}
+
+.app-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.app-nav a {
+  font-size: 14px;
+  color: var(--text-muted);
+  font-family: var(--font);
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s;
+}
+
+.app-nav a:hover {
+  color: var(--text);
+  background: var(--bg);
+}
+
+.app-nav a.active {
+  color: var(--text);
+  background: var(--bg);
+}
+
+[data-theme="neumorphic"] .app-nav a.active{
+
+  background: #e0e5ec;
+  box-shadow: inset 3px 3px 6px #a3b1c6, inset -3px -3px 6px #ffffff;
+  
+}
+
+.theme-tabs {
+  display: flex;
+  gap: 6px;
+}
+
+.theme-btn {
+  font-family: var(--font);
+  font-size: 12px;
+  padding: 6px 12px;
+  background: transparent;
+  color: var(--text-muted);
+  border: var(--border);
+  border-radius: var(--radius-sm);
+  text-transform: capitalize;
+  transition: all 0.2s;
+}
+
+.theme-btn:hover {
+  color: var(--text);
+}
+
+.theme-btn.active {
+  background: var(--accent);
+  color: var(--accent-text);
+  border-color: var(--accent);
+}
+
+main {
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.page-subtitle {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Neumorphic — подкрутка кнопок-табов */
+[data-theme="neumorphic"] .theme-btn {
+  background: #e0e5ec;
+  box-shadow: 3px 3px 6px #a3b1c6, -3px -3px 6px #ffffff;
+  border: none;
+}
+
+[data-theme="neumorphic"] .theme-btn.active {
+  box-shadow: inset 3px 3px 6px #a3b1c6, inset -3px -3px 6px #ffffff;
+  background: #e0e5ec;
+  color: #6c63ff;
+}

@@ -1,0 +1,16 @@
+[data-theme="minimal"] {
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --text: #0a0a0a;
+    --text-muted: #6b7280;
+    --border: 1px solid #e5e7eb;
+    --border-strong: 1px solid #0a0a0a;
+    --accent: #0a0a0a;
+    --accent-text: #ffffff;
+    --radius: 12px;
+    --radius-sm: 6px;
+    --radius-pill: 999px;
+    --shadow: none;
+    --shadow-sm: none;
+    --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+}

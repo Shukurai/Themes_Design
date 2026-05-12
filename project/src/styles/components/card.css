@@ -1,0 +1,68 @@
+.card {
+    position: relative;
+    background: var(--surface);
+    border: var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    color: var(--text);
+    padding: 16px;
+    font-family: var(--font);
+    transition: all 0.3s ease;
+}
+
+.card-img {
+    height: 140px;
+    background: linear-gradient(135deg, #d1d5db, #f3f4f6);
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--radius-sm);
+    margin-bottom: 12px;
+}
+
+.card-tag {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 10px;
+    background: var(--accent);
+    color: var(--accent-text);
+    border-radius: var(--radius-pill);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 4px;
+    color: var(--text);
+}
+
+.card-meta {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 14px;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-price {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--text);
+}
+
+/* Темо-специфичные подкрутки */
+[data-theme="brutalist"] .card-title {
+    text-transform: uppercase;
+}
+
+[data-theme="neumorphic"] .card-img {
+    box-shadow: inset 3px 3px 6px #a3b1c6, inset -3px -3px 6px #ffffff;
+}

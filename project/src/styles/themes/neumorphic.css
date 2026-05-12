@@ -1,0 +1,11 @@
+[data-theme="neumorphic"] {
+    --bg: #e0e5ec;
+    --surface: #e0e5ec;
+    --text: #2d3142;
+    --text-muted: #6b7280;
+    --border: none;
+    --accent: #6c63ff;
+    --accent-text: #fff;
+    --radius: 18px;
+    --shadow: 6px 6px 12px #a3b1c6, -6px -6px 12px #fff;
+}

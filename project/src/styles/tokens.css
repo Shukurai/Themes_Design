@@ -1,0 +1,13 @@
+:root {
+    --bg: #fff;
+    --surface: #fff;
+    --text: #0a0a0a;
+    --text-muted: #6b7280;
+    --border: 1px solid #e5e7eb;
+    --accent: #0a0a0a;
+    --accent-text: #fff;
+    --radius: 12px;
+    --radius-sm: 6px;
+    --shadow: none;
+    --font: -apple-system, system-ui, sans-serif;
+}

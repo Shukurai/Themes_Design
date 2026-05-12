@@ -1,0 +1,18 @@
+[data-theme="brutalist"] {
+    --bg: #f4f1e8;
+    --surface: #fff;
+    --text: #000;
+    --text-muted: #000;
+    --border: 3px solid #000;
+    --accent: #ffea00;
+    --accent-text: #000;
+    --radius: 0;
+    --radius-sm: 0;
+    --shadow: 6px 6px 0 #000;
+    --font: 'Courier New', monospace;
+}
+
+
+[data-theme="brutalist"] .card {
+    text-transform: uppercase;
+}
