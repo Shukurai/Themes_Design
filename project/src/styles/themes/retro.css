@@ -1,4 +1,21 @@
-[data-theme="retro"] {
+[data-theme="retro"][data-mode="light"] {
+    --bg: #fff5f7;
+    --surface: rgba(255, 255, 255, 0.6);
+    --text: #2d0a4a;
+    --text-muted: #c026d3;
+    --border: 1px solid #c026d3;
+    --border-strong: 1px solid #ff2a6d;
+    --accent: #ff2a6d;
+    --accent-text: #ffffff;
+    --radius: 4px;
+    --radius-sm: 2px;
+    --radius-pill: 2px;
+    --shadow: 0 0 20px rgba(192, 38, 211, 0.2);
+    --shadow-sm: 0 0 12px rgba(255, 42, 109, 0.3);
+    --font: 'Courier New', ui-monospace, monospace;
+}
+
+[data-theme="retro"][data-mode="dark"] {
     --bg: #0d0221;
     --surface: rgba(255, 255, 255, 0.04);
     --text: #f0f4ff;
@@ -17,10 +34,10 @@
 
 [data-theme="retro"] .card-title,
 [data-theme="retro"] .logo {
-    text-shadow: 0 0 8px rgba(0, 255, 255, 0.5);
+    text-shadow: 0 0 8px currentColor;
 }
 
-[data-theme="retro"] body {
+[data-theme="retro"][data-mode="dark"] body {
     background-image:
         linear-gradient(rgba(255, 42, 109, 0.05) 1px, transparent 1px),
         linear-gradient(90deg, rgba(0, 255, 255, 0.05) 1px, transparent 1px);

@@ -71,12 +71,12 @@ body {
   background: var(--bg);
 }
 
-[data-theme="neumorphic"] .app-nav a.active{
-
-  background: #e0e5ec;
-  box-shadow: inset 3px 3px 6px #a3b1c6, inset -3px -3px 6px #ffffff;
-  
+[data-theme="neumorphic"] .app-nav a.active {
+  background: var(--bg);
+  color: var(--accent);
+  box-shadow: var(--shadow-inset);
 }
+
 
 .theme-tabs {
   display: flex;
@@ -130,15 +130,36 @@ main {
   gap: 20px;
 }
 
-/* Neumorphic — подкрутка кнопок-табов */
+.mode-toggle {
+  font-size: 16px;
+  padding: 6px 10px;
+  background: transparent;
+  color: var(--text);
+  border: var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mode-toggle:hover {
+  background: var(--bg);
+}
+
+.app-header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 [data-theme="neumorphic"] .theme-btn {
-  background: #e0e5ec;
-  box-shadow: 3px 3px 6px #a3b1c6, -3px -3px 6px #ffffff;
+  background: var(--bg);
+  box-shadow: var(--shadow-sm);
   border: none;
+  color: var(--text-muted);
 }
 
 [data-theme="neumorphic"] .theme-btn.active {
-  box-shadow: inset 3px 3px 6px #a3b1c6, inset -3px -3px 6px #ffffff;
-  background: #e0e5ec;
-  color: #6c63ff;
+  background: var(--bg);
+  box-shadow: var(--shadow-inset);
+  color: var(--accent);
 }

@@ -1,4 +1,4 @@
-[data-theme="minimal"] {
+[data-theme="minimal"][data-mode="light"] {
     --bg: #ffffff;
     --surface: #ffffff;
     --text: #0a0a0a;
@@ -7,6 +7,23 @@
     --border-strong: 1px solid #0a0a0a;
     --accent: #0a0a0a;
     --accent-text: #ffffff;
+    --radius: 12px;
+    --radius-sm: 6px;
+    --radius-pill: 999px;
+    --shadow: none;
+    --shadow-sm: none;
+    --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+}
+
+[data-theme="minimal"][data-mode="dark"] {
+    --bg: #0a0a0a;
+    --surface: #171717;
+    --text: #fafafa;
+    --text-muted: #a1a1aa;
+    --border: 1px solid #27272a;
+    --border-strong: 1px solid #fafafa;
+    --accent: #fafafa;
+    --accent-text: #0a0a0a;
     --radius: 12px;
     --radius-sm: 6px;
     --radius-pill: 999px;

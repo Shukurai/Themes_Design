@@ -1,17 +1,36 @@
-[data-theme="brutalist"] {
+[data-theme="brutalist"][data-mode="light"] {
     --bg: #f4f1e8;
-    --surface: #fff;
-    --text: #000;
-    --text-muted: #000;
-    --border: 3px solid #000;
+    --surface: #ffffff;
+    --text: #000000;
+    --text-muted: #000000;
+    --border: 3px solid #000000;
+    --border-strong: 3px solid #000000;
     --accent: #ffea00;
-    --accent-text: #000;
+    --accent-text: #000000;
     --radius: 0;
     --radius-sm: 0;
-    --shadow: 6px 6px 0 #000;
-    --font: 'Courier New', monospace;
+    --radius-pill: 0;
+    --shadow: 6px 6px 0 #000000;
+    --shadow-sm: 3px 3px 0 #000000;
+    --font: 'Courier New', ui-monospace, monospace;
 }
 
+[data-theme="brutalist"][data-mode="dark"] {
+    --bg: #1a1a1a;
+    --surface: #000000;
+    --text: #ffea00;
+    --text-muted: #ffea00;
+    --border: 3px solid #ffea00;
+    --border-strong: 3px solid #ff3366;
+    --accent: #ff3366;
+    --accent-text: #ffffff;
+    --radius: 0;
+    --radius-sm: 0;
+    --radius-pill: 0;
+    --shadow: 6px 6px 0 #ffea00;
+    --shadow-sm: 3px 3px 0 #ffea00;
+    --font: 'Courier New', ui-monospace, monospace;
+}
 
 [data-theme="brutalist"] .card {
     text-transform: uppercase;

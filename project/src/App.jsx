@@ -6,6 +6,7 @@ import PricingPage from './pages/PricingPage';
 import AuthPage from './pages/AuthPage';
 import DashboardPage from './pages/DashboardPage';
 import HeroPage from './pages/HeroPage';
+import ModeToggle from './components/ModeToggle';
 
 import './styles/reset.css';        
 import './styles/tokens.css';       
@@ -33,7 +34,10 @@ export default function App() {
             <NavLink to="/dashboard">Dashboard</NavLink>
             <NavLink to="/hero">Hero</NavLink>
           </nav>
-          <ThemeSwitcher />
+          <div className="app-header-right">
+            <ThemeSwitcher />
+            <ModeToggle />
+          </div>
         </header>
         <main>
           <Routes>
