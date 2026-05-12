@@ -1,3 +1,25 @@
+body {
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+.card,
+.plan,
+.stat,
+.panel,
+.form-card,
+.hero,
+.btn-primary,
+.btn-secondary,
+.field-input,
+.form-tabs,
+.form-tab {
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
 .app-header {
   display: flex;
   align-items: center;
@@ -10,6 +32,8 @@
   z-index: 10;
 }
 
+
+
 .logo {
   font-weight: 700;
   font-size: 18px;
@@ -20,6 +44,12 @@
 .app-nav {
   display: flex;
   gap: 20px;
+}
+
+[data-theme="neumorphic"] .app-nav {
+  padding: 5px 10px;
+  border: 1px solid #b7cbe6;
+  border-radius: 10px ;
 }
 
 .app-nav a {
